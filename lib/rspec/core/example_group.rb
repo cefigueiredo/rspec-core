@@ -356,7 +356,7 @@ module RSpec
         )
 
         hooks.register_globals(self, RSpec.configuration.hooks)
-        RSpec.world.configure_group(self)
+        RSpec.configuration.configure_group(self)
       end
 
       # @private
